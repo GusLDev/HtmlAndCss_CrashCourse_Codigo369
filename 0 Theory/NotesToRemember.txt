@@ -1,0 +1,38 @@
+margin: 20px; This means it will have margin right,left,top,bottom.
+margin-top/(left,right,bottom): 20px; This means it will have margin to one direction.
+margin: 20px 50px; This means it will have margin right-left 20px and then top-bottom 50px.
+margin: 50px 50px 50px 50px; It will have an especific margin to right,left,top,bottom.
+***********************************WE CAN DO THE SAME WITH PADDING****************************
+***************************************DIFERENCE BETWEEN MARGIN/PADDING***********************
+    * Property margin is for separate the element
+    * Property padding is To increase internal space
+******************************FORMAT YOUR PAGE************************************************
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+****************************************FLEXBOX***********************************************
+    flex-direction: column; -> Tt represents the elements from top to bottom
+    flex-direction: row; -> It represents the elements in a only line
+    flex-direction: column-reverse; ->It's the same as flex-direction: column but reversed
+    flex-direction: row-reverse; ->It's the same as flex-direction: row but reversed
+    
+    justify-content: start;                               align-items: start  
+    justify-content: center; -> these are vertical        align-items: center  -> these are horizontal 
+    justify-content: end;                                align-items: end  
+
+    height: 100vh It takes your screen height
+    flex-wrap: wrap; It makes that if your elements does not have a place it will take a place in other row
+    gap: Explicitly controls the space between flex items.
+****************************************POSITIONS**********************************************
+    position: fixed; -> It helps you to have your item in a specific place
+    *We use left,right,top,bottom to move our item positioned
+
+    position: relative; -> it helps you to have your item in a specific place but it didnt move with the scroll
+    *We use left,right,top,bottom to move our item positioned
+
+    position: absolute; -> It takes the reference from the father and then moves from there
+    *It needs to have a father positioned
+    *We use left,right,top,bottom to move our item positioned
+******************************SOURCES*********************************************************
+    *FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
