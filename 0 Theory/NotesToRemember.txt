@@ -36,3 +36,6 @@ margin: 50px 50px 50px 50px; It will have an especific margin to right,left,top,
     *We use left,right,top,bottom to move our item positioned
 ******************************SOURCES*********************************************************
     *FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    *JUST COLOR PICKER -> We can know what colors we have on the screen with this tool
+    *******************************MENTAL NOTES*****************************************************
+    *Arrange your css by hierarchies
