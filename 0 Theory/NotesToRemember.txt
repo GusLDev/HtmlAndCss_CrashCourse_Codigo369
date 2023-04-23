@@ -24,6 +24,12 @@ margin: 50px 50px 50px 50px; It will have an especific margin to right,left,top,
     height: 100vh It takes your screen height
     flex-wrap: wrap; It makes that if your elements does not have a place it will take a place in other row
     gap: Explicitly controls the space between flex items.
+
+    flex: When we declare flex, we are referencing 3 things, it applies to the item not the container
+    *flex-grow:  The CSS property flex-grow specifies the growth factor of a flex element
+    *flex-shrink: The flex-shrink CSS property specifies the shrinkage factor of a flex item.
+    *flex-basis: The flex-basis CSS property tells us that an element will take up the amount of space allocated,
+     otherwise it will take up as much space as possible.
 ****************************************POSITIONS**********************************************
     position: fixed; -> It helps you to have your item in a specific place
     *We use left,right,top,bottom to move our item positioned
@@ -41,5 +47,6 @@ margin: 50px 50px 50px 50px; It will have an especific margin to right,left,top,
 ******************************SOURCES*********************************************************
     *FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     *JUST COLOR PICKER -> We can know what colors we have on the screen with this tool
+    *GOOGLE ICONS -> https://developers.google.com/fonts/docs/material_icons?hl=es-419
     *******************************MENTAL NOTES*****************************************************
     *Arrange your css by hierarchies
