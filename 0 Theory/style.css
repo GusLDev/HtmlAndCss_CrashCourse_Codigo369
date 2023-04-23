@@ -3,19 +3,32 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background: black;
 }
 .father{
-    width: 200px;
-    height: 200px;
-    background: #F13929;
-    left: 200px;
-    height: 3000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .child{
+    background: #4C35AA;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+}
+.child::before{
+    background: red;
+    content: "after";
     width: 50px;
     height: 50px;
-    background: #7888EA;
-    position: relative;
-    left: 100px;
+    display: block;
+    border-radius: 50%;
+}
+.child::after{
+    background: white;
+    content: "after";
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
 }
