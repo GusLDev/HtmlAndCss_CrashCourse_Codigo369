@@ -44,6 +44,9 @@ margin: 50px 50px 50px 50px; It will have an especific margin to right,left,top,
     *We use these elements for aesthetic issues
     *After means: after content
     *Before means: before content
+*********************************************SASS*************************************************
+    *Automatically generate style sheets
+    *It has properties that css doesn't
 ******************************SOURCES*********************************************************
     *FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     *JUST COLOR PICKER -> We can know what colors we have on the screen with this tool
