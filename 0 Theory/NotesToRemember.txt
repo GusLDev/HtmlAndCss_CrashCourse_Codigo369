@@ -47,6 +47,11 @@ margin: 50px 50px 50px 50px; It will have an especific margin to right,left,top,
 *********************************************SASS*************************************************
     *Automatically generate style sheets
     *It has properties that css doesn't
+*********************************************NTHCHILD*********************************************
+    *even -> for pair children
+    *odd -> for no pair children
+**********************************************KEYFRAMES********************************************
+    *They are trajectory points
 ******************************SOURCES*********************************************************
     *FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     *JUST COLOR PICKER -> We can know what colors we have on the screen with this tool
