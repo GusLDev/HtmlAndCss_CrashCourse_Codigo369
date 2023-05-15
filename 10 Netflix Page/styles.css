@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #000;
+}
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 100;
+}
+.logo img{
+    max-width: 150px;
+}
+.item-list{
+    display: flex;
+}
+.item-list li {
+    list-style: none;
+    margin: 0 10px;
+}
+.item-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.item-list a:hover {
+    color: #de0611;
+}
+.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+.search input {
+    position: absolute;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+    backdrop-filter: blur(10px);
+}
+.search input::placeholder {
+    color: white;
+}
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-shadow{
+    position: absolute;
+    background: linear-gradient(45deg,black 30%,transparent);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.content{
+    position: relative;
+    max-width: 550px;
+    z-index: 1;
+}
+.movie-title{
+    max-width: 250px;
+}
+.content h4{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+.content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid rgba(255,255,255,0.5);
+}
+.content h4 :first-child{
+    padding-left: 0;
+}
+.content h4 :nth-child(2) :first-child{
+    color: #fff;
+    background: #de0611;
+    border-radius: 2px;
+    padding: 0 8px;
+}
+.content h4 :last-child{
+    border-right: none;
+}
+.content p{
+    line-height: 1.5em;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    margin: 10px 0 20px;
+}
+.buttons{
+    position: relative;
+}
+.buttons a{
+  display: inline-block;
+  text-transform: uppercase;
+  background: #de0611;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 10px;
+  padding: 6px 20px;  
+  letter-spacing: 1px;
+}
+.buttons :last-child{
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.buttons :last-child:hover{
+    background: #de0611;
+}
+.play{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    color: #fff;
+    bottom: 50px;
+    left: 100px;
+
+}
+.play img{
+    max-width: 50px;
+}
+@media(max-width: 600px){
+    nav{
+        padding: 20px;
+    }
+    .search{
+        width: calc(100% -20px);
+        height: 40px;
+    }
+}
