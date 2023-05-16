@@ -159,6 +159,30 @@ nav{
 .play img{
     max-width: 50px;
 }
+@media(max-width: 1100px){
+    nav{
+        padding: 20px 50px;
+        flex-direction: column;
+
+    }
+    .item-list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    .banner {
+        padding: 100px 50px;
+    }
+    .play{
+        left: 50px;
+        font-size: 1em;
+    }
+    .play img{
+        margin-right: 10px;
+        max-width: 40px;
+    }
+}
 @media(max-width: 600px){
     nav{
         padding: 20px;
@@ -166,5 +190,13 @@ nav{
     .search{
         width: calc(100% -20px);
         height: 40px;
+    }
+    .banner{
+        padding: 220px 20px 120px;
+    }
+    .play{
+        left: 20px;
+        font-size: 1em;
+        bottom: 30px;
     }
 }
