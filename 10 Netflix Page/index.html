@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Netflix Page</title>
 </head>
@@ -20,6 +21,7 @@
             </ul>
             <div class="search">
                 <input type="text" placeholder="Search">
+                <button class="btn-search"><span class="material-icons">search</span></button>
             </div>
         </nav>
     </header>
@@ -45,9 +47,21 @@
                     <a href="#">My list</a>
                 </div>
             </div>
-            <a href="#" class="play"><img src="./img/play.png" alt="play">WATCH TRAILER</a>
+            <a href="#" class="play" onclick="toggleVideo();"><img src="./img/play.png" alt="play">WATCH TRAILER</a>
         </section>
-        
+        <section class="trailer">
+            <video src="./img/trailer.mp4" controls="true"></video>
+            <img src="./img/close.png" alt="closeButton" class="close" onclick="toggleVideo();">
+        </section>
     </main>
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector(".trailer");
+            const video = document.querySelector("video");
+            trailer.classList.toggle("active");
+            video.currentTime=0;
+            video.pause()
+        }
+    </script>
 </body>
 </html>
