@@ -213,6 +213,7 @@ nav{
 video{
     max-width: 900px;
     outline: none;
+    border-radius: 5px;
 }
 .close{
     position: absolute;
