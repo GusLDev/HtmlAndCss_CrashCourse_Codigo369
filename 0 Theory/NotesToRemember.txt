@@ -52,6 +52,8 @@ margin: 50px 50px 50px 50px; It will have an especific margin to right,left,top,
     *odd -> for no pair children
 **********************************************KEYFRAMES********************************************
     *They are trajectory points
+***************************************SIBLING SELECTOR********************************************
+    *When you have a sibling selector it affects every tag that is within the father
 ******************************SOURCES*********************************************************
     *FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     *JUST COLOR PICKER -> We can know what colors we have on the screen with this tool
