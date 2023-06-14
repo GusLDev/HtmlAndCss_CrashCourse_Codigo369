@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#555,#292929);
+    min-height: 100vh;
+}
+label{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 300px;
+    height: 150px;
+    background: #3e3e3e;
+    box-shadow: 0 0 0 4px #303030;
+    border-radius: 75px;
+}
+label input{
+    appearance: none;
+}
+label span{
+    position: absolute;
+    display: inline-block;
+    left: 0px;
+    width: 175px;
+    height: 150px;
+    background: url(./img/Coffee_01.png);
+    background-size: auto 150px;
+    background-repeat: no-repeat;
+    transition: 2s;
+    transform: rotate(-180deg);
+    transform-origin: 75px;
+}
+label text{
+    position: absolute;
+    left: -60px;
+    color: white;
+    font-size: 1em;
+    font-weight: 800;
+    filter: drop-shadow(0 0 15px #fff);
+    filter: drop-shadow(0 0 35px #fff);
+    transition: 1.5s;
+}
+label text:last-child{
+    left: initial;
+    right: -45px;
+    color: #8f8f8f;
+}
+label input:checked ~ span {
+    left: 150px;
+    background: url(./img/Coffee_02.png);
+    background-size: auto 150px;
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+}
+label input:checked ~ text:last-child {
+    color: white;
+    filter: drop-shadow(0 0 15px #fff);
+    filter: drop-shadow(0 0 35px #fff);
+}
+label input:checked ~ text:nth-child(3){
+    color: #8f8f8f;
+    filter: none;
+}
