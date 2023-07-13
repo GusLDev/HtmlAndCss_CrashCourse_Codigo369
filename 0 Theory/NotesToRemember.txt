@@ -52,6 +52,8 @@ margin: 50px 50px 50px 50px; It will have an especific margin to right,left,top,
     *odd -> for no pair children
 **********************************************KEYFRAMES********************************************
     *They are trajectory points
+**********************************************GRID*************************************************
+    *Grid is for fractioning a page
 ***************************************SIBLING SELECTOR********************************************
     *When you have a sibling selector it affects every tag that is within the father
 ******************************SOURCES*********************************************************
