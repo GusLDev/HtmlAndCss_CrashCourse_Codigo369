@@ -40,12 +40,14 @@ header{
     padding: 0.5em 1.25em;
 }
 .responsive-container{
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
 }
 .grid-column{
     display: flex;
@@ -106,4 +108,9 @@ header{
 }
 img{
     width: 100%;
+}
+@media (max-width:600px) {
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
